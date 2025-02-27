@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donut Delight</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <title>Keranjang Belanja Sidebar</title>
+        <h1>Donut Rakyat</h1>
+        <p>Donut rasa penderitaan rakyat</p>
+    </header>
+    <button id="cart-toggle" onclick="toggleCart()">🛒 Keranjang</button>
+
+<div class="sidebar" id="sidebar">
+    <h2>Keranjang Belanja</h2>
+    <div id="cart-items"></div>
+    <p>Total: Rp <span id="total">0</span></p>
+    
+</div>
+    
+    <nav>
+        <a href="#products" class="our">Our Donuts</a>
+        <a href="#about" class="our">About Us</a>
+        <a href="#contact" class="our">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <h2>Freshly Baked Every Morning</h2>
+            <p>Start your day with our delicious donuts</p>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="product-card">
+            <img src="asset/donut bulat.png" alt="Glazed Donut">
+            <h3>Classic Glazed</h3>
+            <p>Rp. 10.000</p>
+            <button onclick="addToCart('Classic Glazed', 10000)" class="cart-0">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <a>
+                <img src="asset/donutcoklat.png" alt="Chocolate Donut">
+                <h3>Chocolate Dream</h3>
+            </a>
+            <p>Rp. 10.000</p>
+            <button onclick="addToCart('Chocolate Dream', 10000)" class="cart-0">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+            <img src=" asset/donutpink.png" alt="Strawberry Donut">
+            <h3>Strawberry Bliss</h3>
+            <p>Rp. 10.000</p>
+            <button onclick="addToCart('Strawberry Bliss', 10000)" class="cart-0">Add to Cart</button>
+        </div>
+    </section>
+
+    <section id="about" style="padding: 40px; text-align: center;">
+        <h2>About Donut Rakyat</h2>
+        <p>donut rasa rakyat, harga merakyat</p>
+    </section>
+
+    <section id="contact" style="padding: 40px; text-align: center;">
+        <h2>Contact Us</h2>
+        <p>123 Sweet Street, Donut City</p>
+        <p>Phone: (555) 123-4567</p>
+        <p>Email: test@gmail.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Donut Rakyat.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,130 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+header {
+    background-image: url('asset/baground.jpg'); 
+    color: #001780;
+    padding: 20px;
+    text-align: center;
+    font-family: Roboto;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #ff9f43;
+    padding: 10px;
+    
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+.hero {
+    background-image: url('https://via.placeholder.com/1200x400');
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #001780;
+    text-align: center;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+.product-card {
+    background: rgb(252, 252, 252);
+    border-radius: 5px;
+    padding: 75px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.product-card img {
+    width: 150px; /* Sesuaikan dengan ukuran yang diinginkan */
+    height: 150px;
+    object-fit: contain; /* Biar gambar tetap proporsional */
+    display: block; /* Biar tidak miring */
+    margin: 0 auto 10px; /* Tengahin gambar */
+    
+    
+}
+.cart-0{
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;}
+
+.our{
+    color:#001780;
+}
+
+#cart-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart {
+    margin-top: 20px;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -600px; /* Default tertutup */
+    width: 300px;
+    height: 100%;
+    background: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: right 0.3s ease-in-out;
+    overflow-y: auto;
+    font-family:Roboto;
+    transition: right 0.5s ease-in-out; /* Animasi halus */
+    
+}
+.sidebar.open {
+    right: 0; /* Sidebar muncul */
+}
+
+.cart-item button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    
+}
+
+button:hover {
+        background-color: #d9ff00;
+    }
